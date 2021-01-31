@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< Updated upstream
 ActiveRecord::Schema.define(version: 2021_01_30_194808) do
-=======
-ActiveRecord::Schema.define(version: 2021_01_30_121843) do
->>>>>>> Stashed changes
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,13 +34,6 @@ ActiveRecord::Schema.define(version: 2021_01_30_121843) do
     t.string "phone_number"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-<<<<<<< Updated upstream
-    t.string "authentication_token", limit: 30
-    t.boolean "customer"
-    t.boolean "branch_manager"
-    t.index ["authentication_token"], name: "index_users_on_authentication_token", unique: true
-=======
->>>>>>> Stashed changes
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
