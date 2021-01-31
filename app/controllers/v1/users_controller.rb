@@ -12,7 +12,7 @@ module V1
     private
 
     def user_params
-      params.require(:user).permit(:email, :user_name, :date_of_birth, :gender, :phone_number, :password, :password_confirmation)
+      params.require(:user).permit(:email, :user_name, :date_of_birth, :gender, :phone_number, :password, :password_confirmation, :role_id)
     end
   end
 end
